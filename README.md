@@ -12,7 +12,9 @@ Environment: ml
 - Data and Model monitoring
 
 ### Data sets:
-- US interest rate
-- UK interest rate
+- US interest rate: https://fred.stlouisfed.org/series/FEDFUNDS
+- UK interest rate: https://sdw.ecb.europa.eu/quickviewexport.do?SERIES_KEY=229.IRS.M.GB.L.L40.CI.0000.GBP.N.Z&type=csv
 - AUS interest rate
+    - From 2011: https://www.rba.gov.au/statistics/tables/xls/f01d.xls
+    - Prev 2011: https://www.rba.gov.au/statistics/tables/xls-hist/f01dhist.xls
 
