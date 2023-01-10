@@ -4,6 +4,8 @@
 Environment: ml
 
 ## Interest rate
+
+### TODOs
 - Load interest rate data from US, UK, AUS (Later add CAN and NZD)
 - Move into Azure blob storage using PySpark & Airflow
 - Clean and transform datasets
