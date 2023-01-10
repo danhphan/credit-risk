@@ -1,7 +1,14 @@
 # credit-risk
 
 
-Environment: ml
+## Environment
+```
+conda create --name credit_risk python=3.9
+conda activate credit_risk
+pip install -r requirements.txt 
+```
+
+
 
 ## Interest rate
 
