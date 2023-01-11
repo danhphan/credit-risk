@@ -3,8 +3,10 @@
 
 ## Environment
 ```
-conda create --name credit_risk python=3.9
-conda activate credit_risk
+conda create --name creditrisk -c conda-forge python=3.9
+conda activate creditrisk
+conda install -c conda-forge mamba
+mamba install -c conda-forge "pymc>=5.0.0" nutpie
 pip install -r requirements.txt 
 ```
 
