@@ -14,7 +14,7 @@ pip install -r requirements.txt
 
 
 
-### Data sets:
+### Data sets
 - US interest rate: https://fred.stlouisfed.org/series/FEDFUNDS
 - UK interest rate: https://sdw.ecb.europa.eu/quickviewexport.do?SERIES_KEY=229.IRS.M.GB.L.L40.CI.0000.GBP.N.Z&type=csv
 - AUS interest rate
@@ -24,3 +24,6 @@ pip install -r requirements.txt
 ### Data pipelines and architecture
 
 ![architecture](./images/ir_architecture_v1.jpg)
+
+### Project dashboard
+- Comming soon!
