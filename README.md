@@ -21,3 +21,6 @@ pip install -r requirements.txt
     - From 2011: https://www.rba.gov.au/statistics/tables/xls/f01d.xls
     - Prev 2011: https://www.rba.gov.au/statistics/tables/xls-hist/f01dhist.xls
 
+### Data pipelines and architecture
+
+![architecture](./images/ir_architecture_v1.jpg)
