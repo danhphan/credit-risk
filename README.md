@@ -1,26 +1,18 @@
-# credit-risk
-
-
-## Environment
+## Setup Environment
 ```
 conda create --name creditrisk -c conda-forge python=3.9
 conda activate creditrisk
 conda install -c conda-forge mamba
 mamba install -c conda-forge "pymc>=5.0.0" nutpie
+mamba install -c conda-forge bokeh hvplot panel
 pip install -r requirements.txt 
 ```
 
 
 
-## Interest rate
+## Interest rate prediction
 
-### TODOs
-- Load interest rate data from US, UK, AUS (Later add CAN and NZD)
-- Move into Azure blob storage using PySpark & Airflow
-- Clean and transform datasets
-- Build multi-ouput GPs models to predict interest rates
-- Visualisation: need further investigation
-- Data and Model monitoring
+
 
 ### Data sets:
 - US interest rate: https://fred.stlouisfed.org/series/FEDFUNDS
