@@ -1,15 +1,3 @@
-## Setup Environment
-```
-conda create --name creditrisk -c conda-forge python=3.9
-conda activate creditrisk
-conda install -c conda-forge mamba
-mamba install -c conda-forge "pymc>=5.0.0" nutpie
-mamba install -c conda-forge bokeh hvplot panel
-pip install -r requirements.txt 
-```
-
-
-
 ## Interest rate prediction
 
 
@@ -29,9 +17,12 @@ pip install -r requirements.txt
 - Comming soon!
 
 
-### Set up environment
+### Set up Environment
 ```
+conda create --name creditrisk -c conda-forge python=3.9
+conda activate creditrisk
 conda install -c conda-forge mamba
 mamba install -c conda-forge "pymc>=5.0.0" nutpie
 mamba install -c conda-forge bokeh hvplot panel
+pip install -r requirements.txt 
 ```
