@@ -27,3 +27,11 @@ pip install -r requirements.txt
 
 ### Project dashboard
 - Comming soon!
+
+
+### Set up environment
+```
+conda install -c conda-forge mamba
+mamba install -c conda-forge "pymc>=5.0.0" nutpie
+mamba install -c conda-forge bokeh hvplot panel
+```
