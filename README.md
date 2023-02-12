@@ -13,9 +13,9 @@
 
 ![architecture](./images/ir_architecture_v1.jpg)
 
-### Project dashboard
-- Comming soon!
+### Project dashboard: [https://danhphan.net/apps/interest-rate.html](https://danhphan.net/apps/interest-rate.html)
 
+![Project dashboard](./images/predicted_interest_rates.png)
 
 ### Set up Environment
 ```
