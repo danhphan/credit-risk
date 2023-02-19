@@ -26,3 +26,9 @@ mamba install -c conda-forge "pymc>=5.0.0" nutpie
 mamba install -c conda-forge bokeh hvplot panel
 pip install -r requirements.txt 
 ```
+
+Convert panel to app for visualisation on Github
+```
+cd ./nbs
+panel convert app.py --to pyodide-worker --out ../docs/app
+```
