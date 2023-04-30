@@ -4,9 +4,11 @@ import panel as pn
 pn.extension('tabulator')
 
 
-df = pd.read_csv("https://raw.githubusercontent.com/danhphan/credit-risk/main/data/interest_rates.csv")
-df["date"] = pd.to_datetime(df["date"])
-
+df = pd.read_csv("https://raw.githubusercontent.com/danhphan/credit-risk/main/data/interest_rate/interest_rates.csv")
+df["Date"] = pd.to_datetime(df["date"])
+print(df.columns)
+df = df.drop(columns=['date'])
+print(df.columns)
 # Make DataFrame Pipeline Interactive
 idf = df.interactive()
 
@@ -16,17 +18,17 @@ pred_results = {}
 for idx, country in enumerate(country_mapping.keys()):
     # Prediction
     print(idx, country)
-    df_data = pd.read_csv(f"https://raw.githubusercontent.com/danhphan/credit-risk/main/data/prediction_{country}.csv")
+    df_data = pd.read_csv(f"https://raw.githubusercontent.com/danhphan/credit-risk/main/data/interest_rate/prediction_{country}.csv")
     df_data['Date'] = pd.to_datetime(df_data['Date'])
     df_data = df_data.set_index("Date")
     pred_results[country] = df_data
 
 
 WIDTH = 550
-chart_data = (idf.hvplot(x = 'date', by='country', y='rate', kind='scatter', 
+chart_data = (idf.hvplot(x = 'Date', by='country', y='rate', kind='scatter', 
                          xlabel="Date", ylabel="Observed interest rate", width=WIDTH,
                          line_width=2, title="Historical interest rates by Country") *
-              idf.hvplot(x = 'date', by='country', y='rate', line_width=1, color=["blue", "green", "red"])
+              idf.hvplot(x = 'Date', by='country', y='rate', line_width=1, color=["blue", "green", "red"])
               ).opts(legend_position='top', legend_offset=(150, 0))
 
 
@@ -62,4 +64,4 @@ template = pn.template.FastListTemplate(
     sizing_mode="stretch_both"
 )
 
-template.servable()
+template.servable();
